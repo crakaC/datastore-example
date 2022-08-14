@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.proto
+package com.crakac.datastoreexample.data.proto
 
 import android.util.Log
 import androidx.datastore.core.DataStore

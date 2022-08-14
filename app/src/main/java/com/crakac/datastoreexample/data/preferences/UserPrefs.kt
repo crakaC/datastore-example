@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.preferences
+package com.crakac.datastoreexample.data.preferences
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString

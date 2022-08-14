@@ -5,7 +5,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.core.DataStoreFactory
 import androidx.datastore.dataStoreFile
 import com.crakac.datastoreexample.UserProto
-import com.crakac.datastoreexample.proto.UserSerializer
+import com.crakac.datastoreexample.data.proto.UserSerializer
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

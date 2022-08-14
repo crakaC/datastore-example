@@ -2,8 +2,8 @@ package com.crakac.datastoreexample.di
 
 import android.content.Context
 import androidx.room.Room
-import com.crakac.datastoreexample.room.UserDao
-import com.crakac.datastoreexample.room.AppDatabase
+import com.crakac.datastoreexample.data.room.UserDao
+import com.crakac.datastoreexample.data.room.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

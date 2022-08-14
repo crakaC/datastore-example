@@ -2,7 +2,7 @@ package com.crakac.datastoreexample.ui.preferences
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.crakac.datastoreexample.preferences.PreferencesRepository
+import com.crakac.datastoreexample.data.preferences.PreferencesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

@@ -12,7 +12,7 @@ import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 
-private const val USER_PREFERENCES_NAME = "user_preferences"
+private const val USER_PREFERENCES_NAME = "user_prefs"
 private val Context.dataStore by preferencesDataStore(
     name = USER_PREFERENCES_NAME
 )

@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.room
+package com.crakac.datastoreexample.data.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

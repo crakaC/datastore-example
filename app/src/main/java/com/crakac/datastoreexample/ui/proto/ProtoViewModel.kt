@@ -2,7 +2,7 @@ package com.crakac.datastoreexample.ui.proto
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.crakac.datastoreexample.proto.ProtoDataStoreRepository
+import com.crakac.datastoreexample.data.proto.ProtoDataStoreRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

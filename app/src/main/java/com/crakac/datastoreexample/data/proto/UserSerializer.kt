@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.proto
+package com.crakac.datastoreexample.data.proto
 
 import androidx.datastore.core.CorruptionException
 import androidx.datastore.core.Serializer

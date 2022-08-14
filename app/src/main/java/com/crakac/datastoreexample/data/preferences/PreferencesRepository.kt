@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.preferences
+package com.crakac.datastoreexample.data.preferences
 
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences

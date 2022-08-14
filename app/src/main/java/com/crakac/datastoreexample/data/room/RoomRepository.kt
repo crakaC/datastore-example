@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.room
+package com.crakac.datastoreexample.data.room
 
 import android.util.Log
 import kotlinx.coroutines.flow.Flow

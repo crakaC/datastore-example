@@ -1,10 +1,10 @@
-package com.crakac.datastoreexample.data
+package com.crakac.datastoreexample.room
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-import com.crakac.datastoreexample.data.entity.User
+import com.crakac.datastoreexample.room.User
 import kotlinx.coroutines.flow.Flow
 
 @Dao

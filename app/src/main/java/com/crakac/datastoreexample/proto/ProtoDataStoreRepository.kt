@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.data
+package com.crakac.datastoreexample.proto
 
 import android.util.Log
 import androidx.datastore.core.DataStore
@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.catch
 import java.io.IOException
 import javax.inject.Inject
 
-class UserPreferencesRepository @Inject constructor(
+class ProtoDataStoreRepository @Inject constructor(
     private val dataStore: DataStore<UserPreferences>,
 ) {
     companion object {

@@ -1,7 +1,6 @@
-package com.crakac.datastoreexample.data
+package com.crakac.datastoreexample.room
 
 import android.util.Log
-import com.crakac.datastoreexample.data.entity.User
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
 import java.io.IOException

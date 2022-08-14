@@ -3,7 +3,7 @@ package com.crakac.datastoreexample.ui.room
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.crakac.datastoreexample.data.UserRepository
+import com.crakac.datastoreexample.room.UserRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch

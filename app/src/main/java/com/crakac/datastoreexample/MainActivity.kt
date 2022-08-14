@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.ui
+package com.crakac.datastoreexample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,6 +9,9 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.ui.Modifier
+import com.crakac.datastoreexample.ui.AppBottomBar
+import com.crakac.datastoreexample.ui.AppNavHost
+import com.crakac.datastoreexample.ui.rememberAppState
 import com.crakac.datastoreexample.ui.theme.DataStoreSampleTheme
 import dagger.hilt.android.AndroidEntryPoint
 

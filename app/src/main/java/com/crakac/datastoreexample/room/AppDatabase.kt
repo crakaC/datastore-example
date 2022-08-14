@@ -1,8 +1,7 @@
-package com.crakac.datastoreexample.data.entity
+package com.crakac.datastoreexample.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.crakac.datastoreexample.data.UserDao
 
 @Database(entities = [User::class], version = 1, exportSchema = true)
 abstract class AppDatabase : RoomDatabase() {

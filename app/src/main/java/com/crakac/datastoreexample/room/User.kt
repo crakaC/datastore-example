@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.data.entity
+package com.crakac.datastoreexample.room
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

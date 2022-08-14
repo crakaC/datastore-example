@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.data
+package com.crakac.datastoreexample.proto
 
 import androidx.datastore.core.CorruptionException
 import androidx.datastore.core.Serializer
@@ -7,7 +7,7 @@ import com.crakac.datastoreexample.UserPreferences
 import java.io.InputStream
 import java.io.OutputStream
 
-object UserPreferencesSerializer : Serializer<UserPreferences> {
+object UserSerializer : Serializer<UserPreferences> {
     override val defaultValue: UserPreferences = UserPreferences.getDefaultInstance()
     override suspend fun readFrom(input: InputStream): UserPreferences {
         try {

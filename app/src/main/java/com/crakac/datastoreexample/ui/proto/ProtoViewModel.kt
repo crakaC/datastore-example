@@ -2,7 +2,7 @@ package com.crakac.datastoreexample.ui.proto
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.crakac.datastoreexample.data.UserPreferencesRepository
+import com.crakac.datastoreexample.proto.ProtoDataStoreRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -14,10 +14,10 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ProtoViewModel @Inject constructor(
-    private val userPreferencesRepository: UserPreferencesRepository
+    private val protoDataStoreRepository: ProtoDataStoreRepository
 ) : ViewModel() {
     val userPreferences: StateFlow<List<Pair<String, Long>>> =
-        userPreferencesRepository.userPreferencesFlow.map {
+        protoDataStoreRepository.userPreferencesFlow.map {
             it.dataMap.toList()
         }.stateIn(
             scope = viewModelScope,
@@ -28,19 +28,19 @@ class ProtoViewModel @Inject constructor(
     fun addItem() {
         val id = UUID.randomUUID().toString()
         viewModelScope.launch {
-            userPreferencesRepository.update(id)
+            protoDataStoreRepository.update(id)
         }
     }
 
     fun clearItems() {
         viewModelScope.launch {
-            userPreferencesRepository.clear()
+            protoDataStoreRepository.clear()
         }
     }
 
     fun updateItem(id: String) {
         viewModelScope.launch {
-            userPreferencesRepository.update(id)
+            protoDataStoreRepository.update(id)
         }
     }
 }

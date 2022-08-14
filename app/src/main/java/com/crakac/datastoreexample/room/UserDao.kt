@@ -4,16 +4,15 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-import com.crakac.datastoreexample.room.User
 import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface UserDao {
     @Query("SELECT * FROM users")
-    fun getAll(): Flow<List<User>>
+    fun getAll(): Flow<List<UserEntity>>
 
     @Insert
-    suspend fun insert(user: User)
+    suspend fun insert(user: UserEntity)
 
     @Query("DELETE FROM users")
     suspend fun deleteAll()
@@ -21,6 +20,6 @@ interface UserDao {
     @Query("DELETE FROM users WHERE uuid = :uuid")
     suspend fun deleteByUUID(uuid: String)
 
-    @Update(entity = User::class)
-    suspend fun update(user: User)
+    @Update(entity = UserEntity::class)
+    suspend fun update(user: UserEntity)
 }

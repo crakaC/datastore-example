@@ -16,7 +16,7 @@ import javax.inject.Inject
 class ProtoViewModel @Inject constructor(
     private val protoDataStoreRepository: ProtoDataStoreRepository
 ) : ViewModel() {
-    val userPreferences: StateFlow<List<Pair<String, Long>>> =
+    val users: StateFlow<List<Pair<String, Long>>> =
         protoDataStoreRepository.userPreferencesFlow.map {
             it.dataMap.toList()
         }.stateIn(

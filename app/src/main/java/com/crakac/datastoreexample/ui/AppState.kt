@@ -10,10 +10,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.crakac.datastoreexample.R
-import com.crakac.datastoreexample.navigation.NavigationDestination
-import com.crakac.datastoreexample.navigation.ProtoDestination
-import com.crakac.datastoreexample.navigation.RoomDestination
-import com.crakac.datastoreexample.navigation.TopLevelDestination
+import com.crakac.datastoreexample.navigation.*
 
 @Composable
 fun rememberAppState(
@@ -47,6 +44,13 @@ class AppState(
             selectedIcon = R.drawable.ic_room,
             unselectedIcon = R.drawable.ic_room_off,
             iconTextId = R.string.room
+        ),
+        TopLevelDestination(
+            route = PreferencesDestination.route,
+            destination = PreferencesDestination.destination,
+            selectedIcon = R.drawable.ic_preferences,
+            unselectedIcon = R.drawable.ic_preferences_outlined,
+            iconTextId = R.string.preferences
         )
     )
 

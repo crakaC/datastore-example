@@ -3,6 +3,6 @@ syntax = "proto3";
 option java_package = "com.crakac.datastoreexample";
 option java_multiple_files = true;
 
-message UserPreferences {
+message UserProto {
   map<string, int64> data = 1;
 }

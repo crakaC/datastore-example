@@ -7,14 +7,14 @@ import java.io.IOException
 import java.util.*
 import javax.inject.Inject
 
-class UserRepository @Inject constructor(
+class RoomRepository @Inject constructor(
     private val userDao: UserDao
 ) {
     companion object {
         private val TAG = Companion::class.java.simpleName
     }
 
-    val users: Flow<List<User>> = userDao.getAll().catch { exception ->
+    val users: Flow<List<UserEntity>> = userDao.getAll().catch { exception ->
         if (exception is IOException) {
             Log.e(TAG, "Error reading db.", exception)
             emit(emptyList())
@@ -24,11 +24,11 @@ class UserRepository @Inject constructor(
     }
 
     suspend fun add() {
-        userDao.insert(User(UUID.randomUUID().toString(), System.currentTimeMillis()))
+        userDao.insert(UserEntity(UUID.randomUUID().toString(), System.currentTimeMillis()))
     }
 
     suspend fun update(userId: String) {
-        userDao.update(User(userId, System.currentTimeMillis()))
+        userDao.update(UserEntity(userId, System.currentTimeMillis()))
     }
 
     suspend fun clear() {

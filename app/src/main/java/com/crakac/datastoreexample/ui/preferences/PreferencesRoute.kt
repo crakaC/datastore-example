@@ -1,4 +1,4 @@
-package com.crakac.datastoreexample.ui.proto
+package com.crakac.datastoreexample.ui.preferences
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -10,16 +10,16 @@ import com.crakac.datastoreexample.ui.Users
 
 @OptIn(ExperimentalLifecycleComposeApi::class)
 @Composable
-fun ProtoRoute(
+fun PreferencesRoute(
     modifier: Modifier = Modifier,
-    viewModel: ProtoViewModel = hiltViewModel()
+    viewModel: PreferencesViewModel = hiltViewModel()
 ) {
     val state by viewModel.users.collectAsStateWithLifecycle()
     Users(
         modifier = modifier,
-        onClickAdd = viewModel::addItem,
-        onClickClear = viewModel::clearItems,
-        onClickItem = viewModel::updateItem,
+        onClickAdd = viewModel::add,
+        onClickClear = viewModel::deleteAll,
+        onClickItem = viewModel::update,
         data = state
     )
 }

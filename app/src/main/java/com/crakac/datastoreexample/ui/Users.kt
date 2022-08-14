@@ -73,7 +73,7 @@ fun User(
 
 @Preview(showBackground = true, heightDp = 200)
 @Composable
-fun DefaultPreview() {
+fun UsersPreview() {
     DataStoreSampleTheme {
         Surface {
             Users(

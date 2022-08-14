@@ -10,7 +10,6 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.crakac.datastoreexample.R
-import com.crakac.datastoreexample.design.Icon.DrawableResourceIcon
 import com.crakac.datastoreexample.navigation.NavigationDestination
 import com.crakac.datastoreexample.navigation.ProtoDestination
 import com.crakac.datastoreexample.navigation.RoomDestination
@@ -38,15 +37,15 @@ class AppState(
         TopLevelDestination(
             route = ProtoDestination.route,
             destination = ProtoDestination.destination,
-            selectedIcon = DrawableResourceIcon(R.drawable.ic_hive),
-            unselectedIcon = DrawableResourceIcon(R.drawable.ic_hive_outlined),
+            selectedIcon = R.drawable.ic_hive,
+            unselectedIcon = R.drawable.ic_hive_outlined,
             iconTextId = R.string.proto
         ),
         TopLevelDestination(
             route = RoomDestination.route,
             destination = RoomDestination.destination,
-            selectedIcon = DrawableResourceIcon(R.drawable.ic_room),
-            unselectedIcon = DrawableResourceIcon(R.drawable.ic_room_off),
+            selectedIcon = R.drawable.ic_room,
+            unselectedIcon = R.drawable.ic_room_off,
             iconTextId = R.string.room
         )
     )

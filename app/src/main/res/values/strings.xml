@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DataStoreSample</string>
+    <string name="proto">Proto</string>
+    <string name="room">Room</string>
 </resources>

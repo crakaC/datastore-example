@@ -9,7 +9,7 @@ import java.io.IOException
 import javax.inject.Inject
 
 class UserPreferencesRepository @Inject constructor(
-    @ProtoUserPreferencesDataStore private val dataStore: DataStore<UserPreferences>,
+    private val dataStore: DataStore<UserPreferences>,
 ) {
     companion object {
         private val TAG = Companion::class.java.simpleName

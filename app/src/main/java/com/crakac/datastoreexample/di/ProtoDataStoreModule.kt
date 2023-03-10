@@ -13,7 +13,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
-private const val DATA_STORE_FILE_NAME = "user_prefs.pb"
+private const val DATA_STORE_FILE_NAME = "proto_store"
 
 @Module
 @InstallIn(SingletonComponent::class)
